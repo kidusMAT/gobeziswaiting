@@ -1,0 +1,25 @@
+const login = document.getElementById('Login');
+const counting = document.getElementById('counting');
+const timeStarter = 1750798146681;
+const timestartnow = new Date(timeStarter)
+
+var seconds =  0;
+var minutes = 0;
+var hours = 0;
+var days = 0;
+setInterval(myTimer,1000);
+
+function myTimer(){
+    var currentTime = Date.now(); 
+    var difference = currentTime - timeStarter;
+    days = Math.floor(difference /(24 * 60 * 60 * 1000));
+    hours =  Math.floor((difference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
+    minutes = Math.floor((difference % ( 60 * 60 * 1000)) /(60 * 1000))
+    seconds = Math.floor((difference % (1000 * 60))/(1000))
+    days = String(days).padStart(2,"0");
+    hours = String(hours).padStart(2,"0");
+    minutes = String(minutes).padStart(2,"0");
+    seconds = String(seconds).padStart(2,"0");
+    counting.innerHTML = days+':'+hours+':'+minutes+':'+seconds;
+  
+}

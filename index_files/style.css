@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222831;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+}
+.header{
+    padding:22px 0;
+}
+.header nav h1{
+    font-family: 'Orbitron';
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+.header nav h1 span{
+    color:#6EACDA;
+}
+.counter{
+    min-height: 90vh;
+}
+.count-box{
+    margin-bottom:20px ;
+}
+.count-box #counting{
+    font-family: 'Orbitron';
+      color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+.counter .description1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description1 .desc{
+    width:100% ;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    animation-name: dumb;
+    font-family:'Orbitron';
+    color: #6EACDA;
+    font-size: smaller;
+    top: 0px;
+    transition: ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+/*@keyframes dumb{
+    0%   {left:-2px;top:-2px;}
+    25%  {left:0px;top:0px;}
+    50%  {left:2px;top:-2px;}
+    75%  {left:0;top:0px;}
+    100% {left:-2px;top:-2px;}
+}*/
+.description1 .desc span{
+    text-align: center; 
+    color: #fff;  
+}
+.achivments{
+    min-height: 100vh;
+    background-color: #6EACDA;
+}
+.achivments-box{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.achivments-box .title{
+    color: #000;
+    font-family:'Orbitron';
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 12px;
+}
+               
+.achivments-box .number-of-achivments{
+     color: #000;
+    font-family:'Orbitron';
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 12px;
+}
+.description2 .desc2{
+  color: #fff;
+}
+.contactus{
+    min-height: 100vh;
+}
+.contact-box{
+    margin-bottom:20px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-box .title{
+    margin-bottom: 20px;
+    font-family: 'Orbitron';
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+.contact-box .contact-options{
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.contact-box .contact-options ul{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-box .contact-options ul li{
+    list-style-type: none;
+
+}
+.contact-box .contact-options ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 2.2em;
+    color: #6EACDA;
+    transition: 0.3s ease-in-out;
+}
+.contact-box .contact-options ul li a:hover{
+      font-size: 2.5em;
+    color: #fff;
+}
+.loginandsignup{
+    display: none;
+}
+.loginandsignup.active{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-height:100vh ;
+    top: 0;
+    z-index: 1111;
+    background:transparent ;
+    backdrop-filter: blur(10px);
+    overflow-y: hidden;
+    
+}
+.loginandsignup .login{
+    display: none;
+}
+.loginandsignup .login.active{
+    display: flex;
+     width: 300px;
+    height:auto;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+.login.active:hover{
+    border-color: #6EACDA;
+}
+.loginandsignup .login.active .logintitle{
+    font-family: 'Orbitron';
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.loginandsignup .login.active .logintitle .loginform{
+    width: 100%;
+}
+.loginandsignup .login.active .logintitle .loginform form{
+    display: flex;
+    width: 100%;
+}
+.loginandsignup .login.active .logintitle .loginform form .inp{
+    width: 100%;
+    display: flex;
+    background-color: #6EACDA;
+  
+}
+input{
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+input::placeholder{
+    font-family: 'Orbitron';
+    color: #fff;
+}
+input:focus{
+    outline-width: 0;
+    border-color: #6EACDA;
+}
