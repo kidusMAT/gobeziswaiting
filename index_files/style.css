@@ -217,8 +217,8 @@ input:focus{
     outline-width: 0;
     border-color: #6EACDA;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 100px) {
   .contact-box .contact-options ul{
-      width:60%;
+      width:40%;
   }
 }
