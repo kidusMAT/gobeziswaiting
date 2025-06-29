@@ -1,6 +1,6 @@
 const login = document.getElementById('Login');
 const counting = document.getElementById('counting');
-const timeStarter = 1750798146681;
+const timeStarter = 1751211416843;
 const timestartnow = new Date(timeStarter)
 
 var seconds =  0;
